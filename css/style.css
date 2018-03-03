@@ -1,0 +1,102 @@
+@import "variables.css";
+@import "modular.css";
+@import "helpers.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  list-style: none;
+  font-family: var(--font-family);
+}
+
+/************ HEADER ************/
+header {
+  background: var(--light-grey);
+}
+.hero-text {
+  padding: 2.5% 55% 2.5% 0;
+  margin: 10% 0;
+  background: url("../images/hero.png") no-repeat right top;
+  background-size: contain;
+}
+.hero-text span {
+  margin-left: 20px;
+}
+
+/************ MAIN ************/
+main {
+  background: #fff;
+  color: var(--font-color);
+  text-align: center;
+}
+p {
+  color: #7785a6;
+}
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 2% 4%;
+}
+
+/* Services */
+.services ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 100px;
+  margin: 3% 0;
+}
+
+/* Phone Hero */
+.phone-hero {
+  background-color: var(--CTA-color);
+  color: #fff;
+  padding: 3%;
+  margin: 3% 0;
+}
+.phone-hero span {
+  font-size: 3rem;
+  margin-top: 1%;
+  display: inline-block;
+}
+.phone-hero p {
+  color: #dcf5ff;
+}
+
+/* Testimonials */
+.testimonials ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px 80px;
+  margin: 10% 0;
+  text-align: left;
+}
+.testimonials ul img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.testimonials ul span {
+  font-size: 2rem;
+}
+
+/* Book Online Hero */
+.book-online-hero {
+  background-color: var(--light-grey);
+  padding: 6%;
+}
+
+.book-online-hero span {
+  font-size: 2rem;
+  margin-right: 20px;
+  vertical-align: sub;
+}
+
+/************ FOOTER ************/
+footer {
+  background: var(--grey);
+}
