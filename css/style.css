@@ -84,16 +84,56 @@ p {
   font-size: 2rem;
 }
 
-/* Book Online Hero */
-.book-online-hero {
-  background-color: var(--light-grey);
-  padding: 6%;
+/* Contact Info */
+.contact {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 100px;
 }
 
-.book-online-hero span {
-  font-size: 2rem;
-  margin-right: 20px;
-  vertical-align: sub;
+/* Book Online Form */
+.book-online-form {
+  margin: 5% 0 50%;
+  background: var(--light-grey);
+  padding: 5%;
+  border-radius: 5px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.book-online-form .form-group {
+  padding: 10px;
+}
+.book-online-form input {
+  border: 1px solid #d3e0ec;
+  padding: 10px 20px;
+  background: #fff;
+  color: #7785a6;
+  line-height: 32px;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  width: 100%;
+  margin-top: 5px;
+}
+.book-online-form label {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.radio-group {
+  grid-column: 1 /-1;
+  margin: 10px 0;
+}
+.book-online-form input[type="radio"] {
+  width: auto;
+  margin-right: 40px;
+  margin-left: 5px;
+}
+.book-online-form button {
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 
 /************ FOOTER ************/

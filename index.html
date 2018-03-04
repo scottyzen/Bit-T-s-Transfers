@@ -12,7 +12,7 @@
 
   <!-- Fonts and CDN's -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
 
   <title>Big T's Transfer</title>
@@ -43,7 +43,8 @@
       <!-- Services -->
       <div class="container">
         <div class="services">
-          <h2>What we offer</h2>
+          <h2>Services</h2>
+          <p>Providing amazing services to our clients</p>
           <ul>
             <li>
               <img src="images/airport.png" alt="">
@@ -69,7 +70,8 @@
       <!-- Phone Hero -->
       <div class="phone-hero">
         <span>+353 87 330 5783</span>
-        <p>Call now to book transfer</p>
+        <p>We are Ready to Take Your Call 24 Hours a day
+          <br> Call now to arrange a pickup</p>
       </div>
 
       <!-- Testimonials -->
@@ -112,10 +114,73 @@
         </div>
       </div>
 
-      <!-- Book Online Hero -->
-      <div class="book-online-hero">
-        <span>Start your trip off right</span>
-        <a class="cta-button" href="#">Book Now</a>
+      <!-- Book Online Form -->
+      <div class="container">
+        <div class="contact">
+
+          <!-- Contact Information -->
+          <div class="info">
+            <h3>Get In Touch</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempora consequuntur deserunt beatae! In fugit
+              expedita et sunt iusto explicabo voluptas accusamus dolorum alias.</p>
+            <p>
+              Minima eius voluptate beatae ad ab quas molestias quod odit deleniti dignissimos sunt ex quibusdam architecto, repellendus
+              minus nulla recusandae amet laudantium.</p>
+            <a href="">info@bigtstranfers.com</a>
+          </div>
+
+          <!-- Booking Form -->
+          <div class="book-online-form">
+            <!-- Name -->
+            <div class="form-group">
+              <label for="name">Name</label>
+              <br>
+              <input type="text" name="name" placeholder="Name">
+            </div>
+
+            <!-- Email Address -->
+            <div class="form-group">
+              <label for="email">Email</label>
+              <br>
+              <input type="email" name="email" placeholder="Email">
+            </div>
+
+            <!-- Pickup Location -->
+            <div class="form-group">
+              <label for="pickup-location">Pick Up Location</label>
+              <br>
+              <input type="text" name="pickup-location" placeholder="Dublin Airport">
+            </div>
+
+            <!-- drop-off Location -->
+            <div class="form-group">
+              <label for="drop-off-location">Drop Off Location</label>
+              <br>
+              <input type="text" name="drop-off-location" placeholder="Kilkenny">
+            </div>
+
+            <!-- Date -->
+            <div class="form-group">
+              <label for="date">Date</label>
+              <br>
+              <input name="date" type="text" id="datepicker">
+            </div>
+
+
+            <!-- Return or One-Way -->
+            <div class="form-group radio-group">
+              <label for="one-way">One Way</label>
+              <input type="radio" name="trip-type" id="one-way" checked>
+              <label for="return">Return</label>
+              <input type="radio" name="trip-type" id="return">
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="cta-button">Book Now</button>
+
+            </div>
+          </div>
+        </div>
       </div>
 
     </main>
@@ -127,7 +192,9 @@
     </footer>
 
   </div>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
