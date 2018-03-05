@@ -93,6 +93,10 @@ p {
 }
 
 /* Book Online Form */
+input:focus {
+  outline: none;
+}
+
 .book-online-form {
   margin: 5% 0 50%;
   background: var(--light-grey);
@@ -134,6 +138,9 @@ p {
   border: none;
   font-size: 0.9rem;
   font-weight: 300;
+}
+.danger {
+  border-color: tomato !important;
 }
 
 /************ FOOTER ************/
