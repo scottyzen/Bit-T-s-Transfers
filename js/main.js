@@ -7,7 +7,7 @@ var picker = new Pikaday({
 
 $("#submit").click(function() {
   $.ajax({
-    url: "../php/send.php",
+    url: "./php/send.php",
     type: "POST",
     data: {
       name: $("#name").val(),
