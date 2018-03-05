@@ -130,56 +130,62 @@
           </div>
 
           <!-- Booking Form -->
-          <div class="book-online-form">
-            <!-- Name -->
-            <div class="form-group">
-              <label for="name">Name</label>
-              <br>
-              <input type="text" name="name" placeholder="Name">
+          <form>
+
+            <div class="book-online-form">
+
+              <!-- Name -->
+              <div class="form-group">
+                <label for="name">Name</label>
+                <br>
+                <input type="text" name="name" placeholder="Name" id="name">
+              </div>
+
+              <!-- Email Address -->
+              <div class="form-group">
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" placeholder="Email" id="email">
+              </div>
+
+              <!-- Pickup Location -->
+              <div class="form-group">
+                <label for="pickup-location">Pick Up Location</label>
+                <br>
+                <input type="text" name="pickup-location" placeholder="Dublin Airport" id="pickup">
+              </div>
+
+              <!-- drop-off Location -->
+              <div class="form-group">
+                <label for="drop-off-location">Drop Off Location</label>
+                <br>
+                <input type="text" name="drop-off-location" placeholder="Kilkenny" id="dropoff">
+              </div>
+
+              <!-- Date -->
+              <div class="form-group">
+                <label for="date">Date</label>
+                <br>
+                <input name="date" type="text" id="datepicker">
+              </div>
+
+
+              <!-- Return or One-Way -->
+              <div class="form-group radio-group">
+                <label for="one-way">One Way</label>
+                <input type="radio" name="trip-type" value="One way" id="one-way" checked>
+                <label for="return">Return</label>
+                <input type="radio" name="trip-type" value="Return" id="return">
+              </div>
+
+              <div class="form-group">
+                <button id="submit" class="cta-button">Book Now</button>
+
+              </div>
+
             </div>
+          </form>
 
-            <!-- Email Address -->
-            <div class="form-group">
-              <label for="email">Email</label>
-              <br>
-              <input type="email" name="email" placeholder="Email">
-            </div>
-
-            <!-- Pickup Location -->
-            <div class="form-group">
-              <label for="pickup-location">Pick Up Location</label>
-              <br>
-              <input type="text" name="pickup-location" placeholder="Dublin Airport">
-            </div>
-
-            <!-- drop-off Location -->
-            <div class="form-group">
-              <label for="drop-off-location">Drop Off Location</label>
-              <br>
-              <input type="text" name="drop-off-location" placeholder="Kilkenny">
-            </div>
-
-            <!-- Date -->
-            <div class="form-group">
-              <label for="date">Date</label>
-              <br>
-              <input name="date" type="text" id="datepicker">
-            </div>
-
-
-            <!-- Return or One-Way -->
-            <div class="form-group radio-group">
-              <label for="one-way">One Way</label>
-              <input type="radio" name="trip-type" id="one-way" checked>
-              <label for="return">Return</label>
-              <input type="radio" name="trip-type" id="return">
-            </div>
-
-            <div class="form-group">
-              <button type="submit" class="cta-button">Book Now</button>
-
-            </div>
-          </div>
         </div>
       </div>
 
@@ -192,6 +198,8 @@
     </footer>
 
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
   <script src="js/main.js"></script>
